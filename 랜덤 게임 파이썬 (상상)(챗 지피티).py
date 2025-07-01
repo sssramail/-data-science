@@ -52,7 +52,7 @@ for i in range(1, limit + 1):
         n += i
 
 print("짝수의 합은:", n)
-'''
+
 text = input("문자열을 입력하세요: ")
 result = ""
 
@@ -60,3 +60,18 @@ for char in text :
     result = char + result
 
 print("거꾸로 출력:", result)
+
+weapons = {
+    "저격총": 5,
+    "칼날 권총": 3,
+    "중력포": 4,
+    "화염방사기": 2,
+    "부메랑": 6
+}
+
+for weapon, ammo in weapons.items():
+    while ammo > 0:
+        print(weapon, "사용! 남은 탄약:", ammo)
+        ammo -= 1
+    print("무기 교체!")
+'''    
